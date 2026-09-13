@@ -5,47 +5,88 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Обо мне</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f0f4f8;
-      text-align: center;
-      padding: 40px 20px;
-      margin: 0;
-    }
-    h1 { color: #2c3e50; font-size: 32px; }
-    p { color: #555; font-size: 18px; line-height: 1.6; }
-    .card {
+    #main {
+      width: 710px;
+      max-width: 100%;
+      margin: 20px auto;
+      border: 3px solid #edc7ff;
+      box-sizing: border-box;
       background: white;
-      border-radius: 16px;
-      padding: 30px 20px;
-      max-width: 500px;
-      margin: 0 auto;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
     }
-    .info {
-      text-align: left;
-      margin-top: 20px;
-    }
-    .info p {
-      margin: 10px 0;
-    }
-    .label {
+    #header {
+      height: 120px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-bottom: 3px solid #fff7c7;
+      font-size: 28px;
       font-weight: bold;
-      color: #2c3e50;
+      color: #7c3aed;
     }
-    .menu { margin-bottom: 20px; }
+    #photo {
+      width: 450px;
+      max-width: 60%;
+      height: 500px;
+      float: left;
+      border-right: 3px solid #fff7c7;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      background: #f4f0ff;
+      box-sizing: border-box;
+    }
+    #photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    #text {
+      width: 255px;
+      max-width: 40%;
+      height: 500px;
+      float: right;
+      text-indent: 20px;
+      display: flex;
+      align-items: flex-end;
+      padding: 15px;
+      box-sizing: border-box;
+      font-size: 17px;
+      color: #333;
+      line-height: 1.5;
+    }
+    #footer {
+      height: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      clear: both;
+      border-top: 3px solid #fff7c7;
+      font-size: 15px;
+      color: #7c3aed;
+      padding: 10px;
+    }
+    #footer a {
+      color: #7c3aed;
+      text-decoration: none;
+    }
+    .menu {
+      text-align: center;
+      margin-bottom: 10px;
+    }
     .menu a {
       display: inline-block;
       margin: 5px;
-      padding: 8px 16px;
-      background: #e2e8f0;
-      color: #2c3e50;
+      padding: 8px 18px;
+      background: #edc7ff;
+      color: #4a3f8f;
       text-decoration: none;
       border-radius: 8px;
+      font-weight: bold;
       font-size: 15px;
     }
     .menu a.active {
-      background: #2c3e50;
+      background: #7c3aed;
       color: white;
     }
   </style>
@@ -56,12 +97,14 @@
     <a href="about.html" class="active">Обо мне</a>
   </div>
 
-  <div class="card">
-    <h1>Обо мне</h1>
-    <div class="info">
-      <p><span class="label">Имя:</span> Фериде</p>
-      <p><span class="label">Возраст:</span> 14 лет</p>
-      <p><span class="label">Школа:</span> Стальновская школа</p>
+  <div id="main">
+    <div id="header">Обо мне</div>
+    <div id="photo">
+      <img src="7dYm4k6dX0s-3.jpg" alt="Моё фото">
+    </div>
+    <div id="text">Фериде, 15 лет, Стальновская школа</div>
+    <div id="footer">
+      <a href="tel:+79787747011">+7 978 774-70-11</a>
     </div>
   </div>
 </body>
