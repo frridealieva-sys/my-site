@@ -39,9 +39,31 @@
       border-radius: 8px;
       font-size: 16px;
     }
+    .menu {
+      margin-bottom: 20px;
+    }
+    .menu a {
+      display: inline-block;
+      margin: 5px;
+      padding: 8px 16px;
+      background: #e2e8f0;
+      color: #2c3e50;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 15px;
+    }
+    .menu a.active {
+      background: #2c3e50;
+      color: white;
+    }
   </style>
 </head>
 <body>
+  <div class="menu">
+    <a href="index.html" class="active">Главная</a>
+    <a href="about.html">Обо мне</a>
+  </div>
+
   <div class="card">
     <h1>Привет! 👋</h1>
     <p>Это мой первый сайт, сделанный с ноутбука.</p>
